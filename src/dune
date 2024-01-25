@@ -1,0 +1,7 @@
+(library
+ (name RadixPrimitives)
+ (public_name melange-radix-primitives)
+ (libraries reason-react)
+ (modes melange)
+ (preprocess
+  (pps melange.ppx reason-react-ppx)))

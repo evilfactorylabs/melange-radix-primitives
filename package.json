@@ -1,0 +1,26 @@
+{
+  "name": "melange-radix-primitives",
+  "version": "0.0.1",
+  "description": "Melange bindings for Radix Primitives",
+  "scripts": {
+    "init": "opam switch create . 5.1.1 -y --deps-only && pnpm install && pnpm run install && opam exec opam-check-npm-deps",
+    "watch": "opam exec -- dune build -w",
+    "clean": "opam exec -- dune clean",
+    "build": "opam exec -- dune build",
+    "sync": "opam exec -- dune build melange-radix-primitives.opam && opam exec -- dune build @install",
+    "update": "opam update",
+    "opam.install": "pnpm run sync && pnpm run update && opam install . --deps-only --with-test",
+    "publish": "opam publish"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "keywords": [
+    "melange",
+    "react",
+    "radix primitives"
+  ],
+  "author": "I Putu Kevin Anantha Vijaya",
+  "license": "MIT"
+}
