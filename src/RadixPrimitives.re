@@ -1,0 +1,2 @@
+// Label
+module LabelRoot = Label;

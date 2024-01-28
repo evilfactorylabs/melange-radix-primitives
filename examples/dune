@@ -1,0 +1,7 @@
+(melange.emit
+ (target examples)
+ (libraries reason-react melange-radix-primitives)
+ (module_systems
+  (es6 mjs))
+ (preprocess
+  (pps melange.ppx reason-react-ppx)))

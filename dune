@@ -1,1 +1,8 @@
 (dirs :standard \ node_modules)
+
+(rule
+ (alias runtest)
+ (deps
+  (alias_rec test))
+ (action
+  (run pnpm jest)))

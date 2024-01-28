@@ -4,17 +4,22 @@
   "description": "Melange bindings for Radix Primitives",
   "scripts": {
     "init": "opam switch create . 5.1.1 -y --deps-only && pnpm install && pnpm run install && opam exec opam-check-npm-deps",
+    "test": "opam exec -- dune build @runtest --no-buffer",
+    "test.watch": "opam exec -- dune build -w @runtest --no-buffer",
     "watch": "opam exec -- dune build -w",
     "clean": "opam exec -- dune clean",
     "build": "opam exec -- dune build",
+    "format": "opam exec -- dune build @fmt --auto-promote",
+    "format.check": "opam exec -- dune build @fmt",
     "sync": "opam exec -- dune build melange-radix-primitives.opam && opam exec -- dune build @install",
     "update": "opam update",
     "opam.install": "pnpm run sync && pnpm run update && opam install . --deps-only --with-test",
     "publish": "opam publish"
   },
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "@radix-ui/react-label": "^2.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "keywords": [
     "melange",
@@ -22,5 +27,14 @@
     "radix primitives"
   ],
   "author": "I Putu Kevin Anantha Vijaya",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@radix-ui/react-label": "^2.0.2",
+    "@testing-library/dom": "^9.3.4",
+    "@testing-library/react": "^14.1.2",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }

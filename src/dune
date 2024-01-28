@@ -1,3 +1,5 @@
+(dirs :standard __tests__)
+
 (library
  (name RadixPrimitives)
  (public_name melange-radix-primitives)
