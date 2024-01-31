@@ -8,4 +8,8 @@ Make sure opam installed.
 
 ```sh
 pnpm run init
+
+pnpm run watch
+# or
+pnpm run build
 ```

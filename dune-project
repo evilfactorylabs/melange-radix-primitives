@@ -11,7 +11,7 @@
 
 (authors "I Putu Kevin Anantha Vijaya <kevin.anantha@gmail.com>")
 
-(maintainers "I Putu Kevin Anantha Vijaya <kevin.anantha@gmail.com>")
+(maintainers "I Putu Kevin Anantha Vijaya <kevin.anantha@gmail.com>" "Rin <hi@rin.rocks>")
 
 (homepage "https://github.com/evilfactorylabs/melange-radix-primitives")
 
@@ -34,6 +34,8 @@
    (>= 5.1.1))
   reason-react
   reason-react-ppx
+  (melange-testing-library :with-test) ; todo: use with-dev-setup once opam 2.2 is out
+  (melange-jest :with-test) ; todo: use with-dev-setup once opam 2.2 is out
   (opam-check-npm-deps :with-test) ; todo: use with-dev-setup once opam 2.2 is out
   (ocaml-lsp-server :with-test) ; todo: use with-dev-setup once opam 2.2 is out
   (ocamlformat :with-test) ; todo: use with-dev-setup once opam 2.2 is out

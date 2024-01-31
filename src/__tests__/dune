@@ -1,0 +1,13 @@
+(melange.emit
+ (target test)
+ (alias test)
+ (libraries
+  RadixPrimitives
+  reason-react
+  melange-testing-library.react
+  melange-testing-library.dom
+  melange-jest.jest
+  melange-jest.jest-dom)
+ (module_systems commonjs)
+ (preprocess
+  (pps melange.ppx reason-react-ppx)))

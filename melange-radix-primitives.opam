@@ -2,7 +2,10 @@
 opam-version: "2.0"
 synopsis: "Melange bindings for Radix Primitives"
 description: "Melange bindings for Radix Primitives"
-maintainer: ["I Putu Kevin Anantha Vijaya <kevin.anantha@gmail.com>"]
+maintainer: [
+  "I Putu Kevin Anantha Vijaya <kevin.anantha@gmail.com>"
+  "Rin <hi@rin.rocks>"
+]
 authors: ["I Putu Kevin Anantha Vijaya <kevin.anantha@gmail.com>"]
 license: "MIT"
 tags: ["reasonml" "melange" "radix-primitives"]
@@ -16,6 +19,8 @@ depends: [
   "ocaml" {>= "5.1.1"}
   "reason-react"
   "reason-react-ppx"
+  "melange-testing-library" {with-test}
+  "melange-jest" {with-test}
   "opam-check-npm-deps" {with-test}
   "ocaml-lsp-server" {with-test}
   "ocamlformat" {with-test}
